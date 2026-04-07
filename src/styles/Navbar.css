@@ -1,0 +1,505 @@
+/* Enhanced Navbar - Modern Bakery Design */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap');
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: #f5e6d3;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  gap: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  font-size: 28px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo h2 {
+  font-family: 'Pacifico', cursive;
+  color: #3E2723;
+  font-size: 26px;
+  margin: 0;
+  text-shadow: none;
+  font-weight: 400;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navLink {
+  color: #3E2723 !important;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navLink.active {
+  background: rgba(62, 39, 35, 0.15);
+  color: #3E2723 !important;
+  font-weight: 600;
+}
+
+.navLink:hover {
+  background: rgba(62, 39, 35, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navLink.active:hover {
+  background: rgba(62, 39, 35, 0.2);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #f5e6d3;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navLink:hover::after {
+  width: 70%;
+}
+
+.navbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+  gap: 25px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchBar input {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar input:focus {
+  width: 260px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.searchBar input::placeholder {
+  color: #666;
+  font-family: 'Inter', sans-serif;
+}
+
+.searchBar button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3E2723;
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+.searchBar button:hover {
+  transform: scale(1.1);
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.orderBtn {
+  background: linear-gradient(135deg, #f5e6d3, #e8d4b0);
+  color: #3E2723;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.orderBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cartBtn {
+  background: rgba(62, 39, 35, 0.1);
+  border: none;
+  color: #3E2723;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartBtn:hover {
+  background: rgba(62, 39, 35, 0.2);
+  transform: scale(1.1);
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff6b6b;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.menuToggle {
+  background: linear-gradient(135deg, #3E2723, #866755);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.2);
+}
+
+.menuToggle:hover {
+  background: linear-gradient(135deg, #866755, #3E2723);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.3);
+}
+
+.menuToggle:active {
+  transform: scale(0.95);
+}
+
+.menuToggle svg {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.menuToggle:hover svg {
+  transform: rotate(90deg);
+}
+
+.navbar #open {
+  padding-left: 50px;
+}
+
+.navbar #open .logo {
+  display: none;
+}
+
+.navbar #open .navLinks {
+  display: none;
+}
+
+.navbar #open .hiddenLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #f5e6d3, #e8d4b0);
+  padding: 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.hiddenLinks .navLink {
+  display: block;
+  padding: 18px 30px;
+  border-bottom: 1px solid rgba(62, 39, 35, 0.1);
+  font-size: 16px;
+  color: #3E2723 !important;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hiddenLinks .navLink.active {
+  background: rgba(62, 39, 35, 0.15);
+  color: #3E2723 !important;
+  font-weight: 600;
+  border-left: 4px solid #3E2723;
+}
+
+.hiddenLinks .navLink:hover {
+  background: rgba(62, 39, 35, 0.1);
+  padding-left: 40px;
+  color: #866755 !important;
+}
+
+.hiddenLinks .navLink.active:hover {
+  background: rgba(62, 39, 35, 0.2);
+  padding-left: 40px;
+  border-left-color: #866755;
+}
+
+.hiddenLinks .navLink:last-child {
+  border-bottom: none;
+}
+
+/* Mobile menu positioning fixes */
+@media only screen and (max-width: 768px) {
+  .navbar #open .hiddenLinks {
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar #open .hiddenLinks {
+    top: 55px;
+  }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+  .navbar .leftSide {
+    padding-left: 30px;
+    gap: 30px;
+  }
+  
+  .logo h2 {
+    font-size: 24px;
+  }
+  
+  .navLinks {
+    gap: 25px;
+  }
+  
+  .navbar .rightSide {
+    padding-right: 30px;
+    gap: 20px;
+  }
+  
+  .searchBar input {
+    width: 160px;
+  }
+  
+  .searchBar input:focus {
+    width: 200px;
+  }
+  
+  .orderBtn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 0;
+  }
+  
+  .navbar .leftSide {
+    padding-left: 10px;
+    gap: 15px;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+  }
+  
+  .logo h2 {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .logoIcon {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  
+  .navLinks {
+    display: none;
+  }
+  
+  .navbar .rightSide {
+    padding-right: 10px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  
+  .searchBar {
+    display: none;
+  }
+  
+  .orderBtn {
+    display: none;
+  }
+  
+  .actionButtons {
+    display: none;
+  }
+  
+  .menuToggle {
+    display: flex;
+    padding: 8px;
+    flex-shrink: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    height: 55px;
+    padding: 0;
+  }
+  
+  .navbar .leftSide {
+    padding-left: 8px;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .logo {
+    gap: 6px;
+    min-width: 0;
+  }
+  
+  .logo h2 {
+    font-size: 16px;
+  }
+  
+  .logoIcon {
+    font-size: 18px;
+  }
+  
+  .navbar .rightSide {
+    padding-right: 8px;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  
+  .menuToggle {
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .actionButtons {
+    display: none;
+  }
+  
+  .menuToggle svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .navbar #open .hiddenLinks {
+    padding: 15px 20px;
+  }
+  
+  .hiddenLinks .navLink {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .menuToggle {
+    display: none;
+  }
+  
+  .hiddenLinks {
+    display: none !important;
+  }
+}
