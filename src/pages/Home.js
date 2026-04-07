@@ -51,19 +51,19 @@ function Home() {
             <img src={BrownieImage} alt="Brownie" />
             <h3>Chocolate Brownie</h3>
             <p>Rich, fudgy brownie with premium chocolate</p>
-            <span className="price">$4.99</span>
+            <span className="price">₹415</span>
           </div>
           <div className="productCard">
             <img src={CakeImage} alt="Cake" />
             <h3>Chocolate Cake</h3>
             <p>Moist chocolate cake with layers of ganache</p>
-            <span className="price">$12.99</span>
+            <span className="price">₹1,078</span>
           </div>
           <div className="productCard">
             <img src={CroissantImage} alt="Croissant" />
             <h3>Butter Croissant</h3>
             <p>Flaky butter croissant, baked fresh daily</p>
-            <span className="price">$3.49</span>
+            <span className="price">₹290</span>
           </div>
         </div>
       </div>
@@ -114,8 +114,8 @@ function Home() {
             <h3>Morning Combo</h3>
             <p>Croissant + Coffee</p>
             <div className="offerPrice">
-              <span className="original">$8.99</span>
-              <span className="special">$6.99</span>
+              <span className="original">₹746</span>
+              <span className="special">₹580</span>
             </div>
           </div>
           <div className="offerCard">
@@ -123,8 +123,8 @@ function Home() {
             <h3>Chocolate Lovers</h3>
             <p>Buy 2 Brownies, Get 1 Free</p>
             <div className="offerPrice">
-              <span className="original">$14.98</span>
-              <span className="special">$9.99</span>
+              <span className="original">₹1,242</span>
+              <span className="special">₹830</span>
             </div>
           </div>
           <div className="offerCard">

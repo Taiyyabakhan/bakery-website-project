@@ -12,46 +12,46 @@ export const MenuList = [
   {
     name: "Signature Cake",
     image: CreamyCake,
-    price: 15.99,
+    price: 1327,
   },
   {
     name: "Chocolate Delight",
     image: Brownie,
-    price: 11.99,
+    price: 995,
   },
   {
     name: "Gourmet Cupcakes",
     image: Cupcakes,
-    price: 18.99,
+    price: 1576,
   },
   {
     name: "Fresh Croissant",
     image: Croissant,
-    price: 12.99,
+    price: 1078,
   },
   {
     name: "Fluffy Pancakes",
     image: Pancake,
-    price: 6.99,
+    price: 580,
   },
   {
     name: "Baking Process",
     image: Process,
-    price: 8.99,
+    price: 746,
   },
   {
     name: "Specialty Coffee",
     image: Cup,
-    price: 4.99,
+    price: 415,
   },
   {
     name: "Deluxe Brownie",
     image: deluxe_brownie,
-    price: 9.99,
+    price: 830,
   },
   {
     name: "Classic Croissant",
     image: classic_croissant,
-    price: 5.99,
+    price: 497,
   },
 ];
