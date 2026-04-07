@@ -138,37 +138,6 @@ The website is fully responsive and optimized for:
 - Tablet (768px - 1199px)
 - Mobile (320px - 767px)
 
-## 🚀 Deployment
-
-### Build for Production
-```bash
-npm run build
-# or
-yarn build
-```
-
-The build files will be created in the `build/` directory.
-
-### Deploy to GitHub Pages
-1. Install GitHub Pages package:
-   ```bash
-   npm install --save gh-pages
-   ```
-
-2. Add to `package.json`:
-   ```json
-   "homepage": "https://Taiyyabakhan.github.io/bakery-website-project",
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build"
-   }
-   ```
-
-3. Deploy:
-   ```bash
-   npm run deploy
-   ```
-
 ## 🌟 Future Frontend Enhancements
 
 ### Planned Features
@@ -189,15 +158,10 @@ The build files will be created in the `build/` directory.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👥 Author
 
 **Taiyyaba Khan**
-- GitHub: [@Taiyyabakhan](https://github.com/Taiyyabakhan)
-- Project Link: [https://github.com/Taiyyabakhan/bakery-website-project](https://github.com/Taiyyabakhan/bakery-website-project)
 
 ## 🙏 Acknowledgments
 
@@ -205,11 +169,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - React team for the excellent framework
 - All the customers and supporters of Soft Bakery
 
-## 📞 Contact
-
-For any questions or suggestions, please feel free to reach out:
-- Email: your-email@example.com
-- GitHub Issues: [Create an issue](https://github.com/Taiyyabakhan/bakery-website-project/issues)
 
 ---
 
