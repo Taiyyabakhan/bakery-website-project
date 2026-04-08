@@ -9,7 +9,7 @@ const galleryImages = {
   process: require("../assets/process.jpg"),
   creamycake: require("../assets/creamycake.jpg"),
   cupcakes: require("../assets/cupcakes.jpg"),
-  buttercroissant: require("../assets/Butter Croissant.jpg")
+  buttercroissant: require("../assets/Butter_Croissant.jpg")
 };
 
 function ImageWithFallback({ src, alt, ...props }) {

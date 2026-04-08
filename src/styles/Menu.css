@@ -107,25 +107,46 @@
   line-height: 1.5;
 }
 
-.menuItem .orderButton {
-  background: linear-gradient(135deg, #3E2723, #866755);
+.addToCartButton {
+  background: linear-gradient(135deg, #a35f37 0%, #ce955d 100%);
   color: white;
   border: none;
-  padding: 12px 24px;
-  border-radius: 25px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 20px;
   font-weight: 600;
-  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 0 20px 20px 20px;
+  font-size: 0.75rem;
+  font-family: 'Inter', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 8px rgba(212, 165, 116, 0.2);
+  margin: 0 20px 20px 20px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.menuItem .orderButton:hover {
+.addToCartButton:hover {
+  background: linear-gradient(135deg, #8b4513 0%, #6d3410 100%);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(62, 39, 35, 0.3);
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+.addToCartButton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.25);
+}
+
+.addToCartButton:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(212, 165, 116, 0.3);
+}
+
+.addToCartButton::-moz-focus-inner {
+  border: none;
+  padding: 0;
 }
 
 /* Category Sections */

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import BrownieImage from "../assets/brownie.jpg";
-import CakeImage from "../assets/chocolate cake.jpg";
+import CakeImage from "../assets/chocolate_cake.jpg";
 import CroissantImage from "../assets/Croissant.jpg";
 import { SkeletonHero, SkeletonSection } from "../components/Skeleton";
 import "../styles/Home.css";
