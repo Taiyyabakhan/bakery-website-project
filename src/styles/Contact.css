@@ -254,11 +254,11 @@ textarea::placeholder {
     width: 95%;
     min-height: 600px;
   }
-  
+
   .contact .leftSide {
     flex: 45%;
   }
-  
+
   .contact .rightSide {
     flex: 55%;
     padding: 40px 30px;
@@ -269,47 +269,55 @@ textarea::placeholder {
   .contact {
     padding: 20px 15px;
   }
-  
+
   .contactContainer {
     flex-direction: column;
     height: auto;
     max-width: 600px;
     width: 100%;
   }
-  
+
   .contact .leftSide {
-    height: 300px;
+    height: auto;
+    padding: 30px 20px;
     flex: none;
     width: 100%;
   }
-  
+
+  .contactImage {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+  }
+
   .contact .rightSide {
     padding: 30px 25px;
     min-height: auto;
     flex: none;
     width: 100%;
   }
-  
+
   .contact .rightSide h1 {
     font-size: 32px;
   }
-  
+
   .contact .rightSide p {
     font-size: 1rem;
   }
-  
+
   .formRow {
     grid-template-columns: 1fr;
   }
-  
+
   .imageText {
     padding: 20px;
   }
-  
-  .imageText h2 {
+
+  .imageText h3 {
     font-size: 1.5rem;
+    white-space: nowrap;
   }
-  
+
   .imageText p {
     font-size: 0.9rem;
   }
@@ -319,43 +327,49 @@ textarea::placeholder {
   .contact {
     padding: 15px 10px;
   }
-  
+
   .contactContainer {
     width: 100%;
   }
-  
+
   .contact .leftSide {
-    height: 250px;
+    height: auto;
+    padding: 20px 15px;
   }
-  
+
+  .contactImage {
+    max-height: 250px;
+  }
+
   .contact .rightSide {
     padding: 25px 20px;
   }
-  
+
   .contact .rightSide h1 {
     font-size: 28px;
   }
-  
+
   .contact .rightSide p {
     font-size: 0.9rem;
   }
-  
+
   .imageOverlay {
     padding: 30px 20px;
   }
-  
+
   .imageOverlay h2 {
     font-size: 24px;
   }
-  
+
   .imageText {
     padding: 15px;
   }
-  
-  .imageText h2 {
+
+  .imageText h3 {
     font-size: 1.3rem;
+    white-space: nowrap;
   }
-  
+
   .imageText p {
     font-size: 0.85rem;
   }
