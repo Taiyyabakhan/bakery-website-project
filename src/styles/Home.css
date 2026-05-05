@@ -149,9 +149,9 @@
   }
   
   .featuredSection {
-    width: 100%;
+    width: 90%;
     margin: 30px auto;
-    padding: 0 20px;
+    padding: 0;
   }
   
   .featuredSection h2 {
@@ -164,9 +164,9 @@
   }
   
   .testimonialsSection {
-    width: 100%;
+    width: 90%;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 0;
   }
   
   .testimonialsSection h2 {
@@ -179,9 +179,9 @@
   }
   
   .aboutSection {
-    width: 100%;
+    width: 90%;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 0;
   }
   
   .aboutSection h2 {
@@ -193,9 +193,9 @@
   }
   
   .offersSection {
-    width: 100%;
+    width: 90%;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 0;
   }
   
   .offersSection h2 {
@@ -246,7 +246,7 @@
   .testimonialsSection,
   .aboutSection,
   .offersSection {
-    padding: 0 15px;
+    padding: 0;
   }
   
   .productCard,
